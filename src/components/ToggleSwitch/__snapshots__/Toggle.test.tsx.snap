@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleSwitch should render with checked false 1`] = `
+.c0 {
+  border: 1px solid #D62A92;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background: #d3d3d3;
+}
+
+.c1 {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background: #fff;
+  left: 0;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px #D62A92;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+<div>
+  <label
+    class="c0"
+  >
+    <input
+      class="c1"
+      id="toggleId"
+    />
+    <span
+      class="c2"
+    />
+  </label>
+</div>
+`;
