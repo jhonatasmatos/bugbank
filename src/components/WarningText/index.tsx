@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import { WarnigWrapper } from './styles';
 
 export type WarningTextProps = {
-  color?: 'white' | 'primary';
+  color?: 'white' | 'secondary';
   children: ReactNode;
 };
 

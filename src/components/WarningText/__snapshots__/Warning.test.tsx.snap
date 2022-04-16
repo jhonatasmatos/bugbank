@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WarningText /> should render with texto "text test" 1`] = `
+.c0 {
+  padding: 1.6rem;
+  border: 1px solid #A422E3;
+  border-radius: 0.8rem;
+  color: #A422E3;
+  font-style: italic;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+.c0 span {
+  font-weight: bold;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    text test
+  </p>
+</div>
+`;

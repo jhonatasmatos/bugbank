@@ -5,7 +5,7 @@ import { ToggleSwitch } from '.';
 
 const fn = jest.fn();
 
-describe('ToggleSwitch', () => {
+describe('<ToggleSwitch />', () => {
   it('should render background with gray color when isChecked is false', () => {
     const { container } = renderTheme(
       <ToggleSwitch id="toggleId" isChecked={false} onClick={fn} />,

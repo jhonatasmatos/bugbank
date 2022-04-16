@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 interface IWarnigWrapper {
-  color?: 'white' | 'primary';
+  color?: 'white' | 'secondary';
 }
 
 export const WarnigWrapper = styled.p`
@@ -20,7 +20,7 @@ export const WarnigWrapper = styled.p`
     }
 
     ${(p: IWarnigWrapper) =>
-      p.color == 'white' &&
+      p.color === 'white' &&
       css`
         border: 1px solid ${theme.colors.white};
         color: ${theme.colors.white};
