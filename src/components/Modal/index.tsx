@@ -32,9 +32,15 @@ export const Modal = ({ type, onClose, text }: ModalProps) => {
         </ContainerCloseButton>
 
         <ContainerInformations>
-          {type === 'error' && <BiErrorCircle size={84} color="red" />}
-          {type === 'ok' && <BiCheckCircle size={84} color="green" />}
-          {type === 'alert' && <FiAlertCircle size={84} color="yellow" />}
+          {type === 'error' && (
+            <BiErrorCircle data-testid="error-icon" size={84} color="red" />
+          )}
+          {type === 'ok' && (
+            <BiCheckCircle data-testid="ok-icon" size={84} color="green" />
+          )}
+          {type === 'alert' && (
+            <FiAlertCircle data-testid="alert-icon" size={84} color="yellow" />
+          )}
           <Text id="modalText">{text}</Text>
           <Button id="btnCloseModal" onClick={handleCloseClick}>
             Fechar
