@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> should render with accordion closed 1`] = `
+.c0 {
+  width: 100%;
+  padding: 0 8rem;
+  margin-bottom: 1.6rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 6rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 1.6rem;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      id="accordion-xpto-1234-0000"
+    >
+      xpto-12345-0000
+      <svg
+        data-testid="plus-icon"
+        fill="none"
+        height="26"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="26"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="12"
+          x2="12"
+          y1="5"
+          y2="19"
+        />
+        <line
+          x1="5"
+          x2="19"
+          y1="12"
+          y2="12"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
