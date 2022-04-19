@@ -6,11 +6,9 @@ const fn = jest.fn();
 
 describe('<Modal />', () => {
   it('should render LinkText with text "text link" and href', () => {
-    const { container, getByText, debug } = renderTheme(
+    const { container, getByText } = renderTheme(
       <LinkText href="/test">text link</LinkText>,
     );
-    debug();
-
     const linkText = getByText('text link');
 
     expect(container).toHaveTextContent('text link');
