@@ -4,7 +4,7 @@ import { FiMinus, FiPlus } from 'react-icons/fi';
 
 export type AccordionProps = {
   id: string;
-  setAccordionOpened: (arg: string) => void;
+  onClick: (arg: string) => void;
   accordionOpened: string;
   title: string;
   description: string[];
@@ -12,7 +12,7 @@ export type AccordionProps = {
 
 export const Accordion = ({
   id,
-  setAccordionOpened,
+  onClick,
   accordionOpened,
   title,
   description,
@@ -22,16 +22,23 @@ export const Accordion = ({
   return (
     <Container>
       <AccordionHeader
-        id={`accordion${id}`}
+        id={`accordion-${id}`}
         isOpened={isOpened}
-        onClick={() => setAccordionOpened(title)}
+        onClick={() => onClick(id)}
       >
         {title}
-        {isOpened ? <FiMinus size={26} /> : <FiPlus size={26} />}
+        {isOpened ? (
+          <FiMinus data-testid="minus-icon" size={26} />
+        ) : (
+          <FiPlus data-testid="plus-icon" size={26} />
+        )}
       </AccordionHeader>
 
       {isOpened && (
-        <AccordionBody id={`textAccordion${id}`}>
+        <AccordionBody
+          data-testid={`textAccordion-${id}`}
+          id={`textAccordion-${id}`}
+        >
           {description.map((desc) => desc)}
         </AccordionBody>
       )}

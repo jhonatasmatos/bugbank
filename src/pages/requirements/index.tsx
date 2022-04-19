@@ -111,7 +111,7 @@ function Requirements() {
             key={index}
             id={req.title}
             accordionOpened={accordionOpened}
-            setAccordionOpened={toggleAccordionOpened}
+            onClick={toggleAccordionOpened}
             {...req}
           />
         ))}
