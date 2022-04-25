@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render with success 1`] = `
+.c0 {
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.4));
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.4));
+  width: 100%;
+  padding: 1.6rem 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.6rem;
+  font-family: 'Nunito',sans-serif;
+  color: #fff;
+  background: #D62A92;
+  border: 1px solid #D62A92;
+}
+
+.c0:hover {
+  opacity: 0.8;
+}
+
+<div>
+  <button
+    class="c0 button__child"
+    type="button"
+  >
+    Enviar
+  </button>
+</div>
+`;
