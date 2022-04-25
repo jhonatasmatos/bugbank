@@ -27,6 +27,9 @@ export default {
     '!<rootDir>/src/config/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/pages/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/node_modules/',
+    '!<rootDir>/src/components/HeadLinks/index.tsx',
+    '!<rootDir>/src/components/index.ts',
+    '!<rootDir>/src/assets/**/*',
   ],
 
   // The directory where Jest should output its coverage files
@@ -156,7 +159,16 @@ export default {
   testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  testPathIgnorePatterns: ['/node_modules/', '/.next/', '/.out/', '/public/'],
+  testPathIgnorePatterns: [
+    '/node_modules/',
+    '/.next/',
+    '/.out/',
+    '/public/',
+    '<rootDir>/src/components/index.ts',
+    '<rootDir>/src/components/HeadLinks/index.tsx',
+    '<rootDir>/src/components/index.ts',
+    '<rootDir>/src/assets/',
+  ],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],
