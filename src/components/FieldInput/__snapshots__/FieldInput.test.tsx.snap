@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FieldInput /> should render with success 1`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 8px;
+  padding-bottom: 16px;
+}
+
+.c0 .input__label {
+  font-size: 1.8rem;
+  font-family: 'Nunito',sans-serif;
+  color: #D62A92;
+}
+
+.c0 .input__default {
+  width: 100%;
+  padding: 1.3rem 1rem;
+  border: 1px solid #D62A92;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  margin-top: 0.6rem;
+  box-shadow: 0px 0px 0px 0px #D62A92;
+}
+
+.c0 .input__default:focus {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: none;
+  box-shadow: 0px 0px 0px 1px #D62A92;
+}
+
+.c0 .input__warging {
+  opacity: 1;
+  bottom: -25px;
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: red;
+  font-size: 1.2rem;
+  font-family: 'Nunito',sans-serif;
+}
+
+<div>
+  <div
+    class="c0 input__child"
+  >
+    <label
+      class="input__label"
+      for="test"
+    >
+      test
+    </label>
+    <input
+      autocomplete="off"
+      class="input__default"
+      placeholder="test"
+      type="text"
+    />
+    <p
+      class="input__warging"
+    >
+      error
+    </p>
+  </div>
+</div>
+`;
