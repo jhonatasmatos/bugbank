@@ -1,4 +1,3 @@
-//STYLE
 import { ContainerFieldInput } from './style';
 
 export type FieldInputProps = {
@@ -14,8 +13,8 @@ export type FieldInputProps = {
 export const FieldInput = ({
   label,
   name,
-  visible = false,
-  type = 'text',
+  visible,
+  type,
   placeholder,
   messageError,
   register,
@@ -26,7 +25,7 @@ export const FieldInput = ({
         {label}
       </label>
       <input
-        type={type || 'text'}
+        type={type}
         className="input__default"
         placeholder={placeholder}
         {...register(name)}
